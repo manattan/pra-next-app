@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Layout from "../components/Layout";
 import { getSortedPostsData } from '../lib/main'
 
@@ -14,11 +15,13 @@ const Home = ({allPostsData}) => {
           {allPostsData.map(({id,date,title})=>(
             <section className="post" key={id}>
             <li>
-              {title}
+              <Link href={`posts/${id}`}>
+                <a>{title}</a>
+              </Link>
               <br />
-              {id}
-              <br />
-              {date}
+              <small>
+                {date}
+              </small>
             </li>
           </section>
           ))}
