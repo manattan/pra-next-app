@@ -2,3 +2,13 @@
     max-width:500px;
     margin: 30px auto;
 }
+
+.header{
+    max-width: 500px;
+    padding-top: 30px;
+    margin:0  auto;
+}
+
+.img{
+    margin: 0 auto;
+}

@@ -6,17 +6,8 @@ const FirstPost = () => {
   // return <h1>Hello, world</h1>
   return (
     <Layout>
-      <div>
-        <Head>
-          <title>First Post</title>
-        </Head>
-        <h1>Hello, World</h1>
-        <h2>
-          <Link href="/">
-            <a>Back to Home</a>
-          </Link>
-        </h2>
-      </div>
+        <h1>Hello, world</h1>
+        <p>こんにちは、せかい</p>
     </Layout>
   );
 };
