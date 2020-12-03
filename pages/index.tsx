@@ -12,7 +12,7 @@ const Home = ({allPostsData}) => {
         <h2>Blog</h2>
         <ul>
           {allPostsData.map(({id,date,title})=>(
-            <section className="post">
+            <section className="post" key={id}>
             <li>
               {title}
               <br />
