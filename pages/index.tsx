@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import getSortedPostsData from '../lib/main'
+import { getSortedPostsData } from '../lib/main'
 
 const Home = ({allPostsData}) => {
   return (
@@ -12,7 +12,7 @@ const Home = ({allPostsData}) => {
         <h2>Blog</h2>
         <ul>
           {allPostsData.map(({id,date,title})=>(
-            <div className="post">
+            <section className="post">
             <li>
               {title}
               <br />
@@ -20,7 +20,7 @@ const Home = ({allPostsData}) => {
               <br />
               {date}
             </li>
-          </div>
+          </section>
           ))}
         </ul>
       </section>
