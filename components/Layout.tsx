@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const name = 'Takanori'
  
-const Layout = ({children, home}) => {
+const Layout = ({children, home}:{children: React.ReactNode, home?: boolean}) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,17 +13,17 @@ const Layout = ({children, home}) => {
         <meta name="og:title" content="sample blog"/>
         <meta name="twitter:card" content="summary_large_image" />
       </Head> 
-      <header class={styles.header}>
+      <header className={styles.header}>
         {home ? (
           <>
-            <img class={styles.img} src="/me.jpg" alt="me" width="30%" height="30%" />
+            <img className={styles.img} src="/me.jpg" alt="me" width="30%" height="30%" />
             <h1>{name}</h1>
           </>
         ): (
           <>
             <Link href="/">
               <a>
-                <img class={styles.img} src="/me.jpg" alt="me" width="30%" height="30%"/>
+                <img className={styles.img} src="/me.jpg" alt="me" width="30%" height="30%"/>
               </a>
             </Link>
           </>
