@@ -25,3 +25,11 @@ img {
   max-width: 100%;
   display: block;
 }
+
+ul{
+  list-style: none;
+}
+
+.post{
+  margin-bottom: 20px;
+}
